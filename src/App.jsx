@@ -26,8 +26,8 @@ const handleRemoveBookmarked = (id)=>{
   return (
     <>
       <Navbar></Navbar>
-      <div className='w-11/12 mx-auto pb-[100px] flex gap-[2%]'>
-        <div className='left-part w-[66%] bg-white'>
+      <div className='w-11/12 mx-auto pb-[50px] md:pb-[100px] flex flex-col-reverse md:flex-row gap-[2%]'>
+        <div className='left-part w-full md:w-[66%] bg-white'>
           <Suspense fallback='<h2>Blogs is loading....</h2>'>
             <Blogs 
             blogPromiss={blogPromiss} 
@@ -37,7 +37,7 @@ const handleRemoveBookmarked = (id)=>{
           </Suspense>
         </div>
         
-        <div className="right-part w-[32%] ">
+        <div className="right-part w-full md:w-[32%] ">
           <div className='px-12 py-5 bg-[#6047EC]/[0.1] text-center rounded-lg border border-[#6047EC] mt-10 mb-6 '>
             <button className='font-exo font-bold text-2xl text-[#6047EC]'>Spent time on read : {readingTime} min</button>
           </div>

@@ -15,7 +15,7 @@ const Blog = ({blog,handelBookmark,handleMarkAsRead}) => {
                 <div className='flex justify-center items-center gap-6 mt-8'>
                     <img className='w-[60px] h-[60px]' src={author_img} alt="" />
                     <div>
-                        <h2 className='font-exo font-bold text-2xl mb-1'>{author}</h2>
+                        <h2 className='font-exo font-bold text-lg md:text-2xl mb-1'>{author}</h2>
                         <p className='font-exo font-semibold text-[#111111]/[0.6]'>{posted_date}</p>
                     </div>
                 </div>
@@ -26,7 +26,7 @@ const Blog = ({blog,handelBookmark,handleMarkAsRead}) => {
             </div>
             <div>
                 {/* div for details data */}
-                <h2 className='font-exo font-bold text-[40px] py-4'>{title}</h2>
+                <h2 className='font-exo font-bold text-[28px] md:text-[40px] py-4'>{title}</h2>
                 <div className="flex gap-4 font-exo font-medium text-xl text-[#111111]/[0.6]">
                     {
                         blog.hashtags.map((hasTag,i) => <p key={i}>#{hasTag}</p>)
